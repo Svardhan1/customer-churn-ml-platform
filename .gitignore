@@ -84,7 +84,9 @@ htmlcov/
 # MLflow
 # ==============================
 
+# MLflow
 mlruns/
+mlflow.db
 
 # ==============================
 # Temporary files

@@ -10,3 +10,5 @@ jupyter
 pytest
 xgboost
 mlflow
+fastapi
+uvicorn

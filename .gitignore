@@ -94,3 +94,13 @@ mlflow.db
 
 *.tmp
 *.temp
+
+# Local database exports / backups
+/customer_churn_data.sql
+*.dump
+*.backup
+rds-secret.json
+rds-secret*.json
+
+# Local Docker credential/config experiments
+docker-ecr-test/

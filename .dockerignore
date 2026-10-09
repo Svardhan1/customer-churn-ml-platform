@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+*.env
+!.env.example
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/
+
+# Tests
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Raw and processed datasets
+data/raw/
+data/processed/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local MLflow tracking database
+mlflow.db
+
+# Docker learning files
+docker-learning/

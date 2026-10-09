@@ -20,9 +20,13 @@ env/
 
 .env
 *.env
-
-# Keep the example environment file
 !.env.example
+
+# Secret and credential files
+*secret*.json
+*credentials*.json
+rds-secret.json
+rds-secret*.json
 
 # ==============================
 # Jupyter
@@ -40,6 +44,11 @@ data/processed/*
 # Keep folder structure
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+
+# Local database exports and backups
+customer_churn_data.sql
+*.dump
+*.backup
 
 # ==============================
 # Machine Learning
@@ -84,12 +93,26 @@ htmlcov/
 # MLflow
 # ==============================
 
-# MLflow
 mlruns/
 mlflow.db
 
 # ==============================
-# Temporary files
+# Docker
+# ==============================
+
+# Temporary Docker credential/config experiments
+docker-ecr-test/
+
+# ==============================
+# AWS Deployment
+# ==============================
+
+# Local ECS task-definition files
+task-definition.json
+task-definition-v2.json
+
+# ==============================
+# Temporary Files
 # ==============================
 
 *.tmp
